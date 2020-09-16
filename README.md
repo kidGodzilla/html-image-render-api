@@ -71,8 +71,13 @@ This will generate an image with some custom text.
 ![Example image](./example.png)
 
 
+# Installation / Setup
+
+Install with `npm install` & run with `npm start`. 
 
 ### Dotenv template
+
+You will need to set some configuration in a dotenv file to run locally, and set up environment variables to run in production.
 
 ```
 THUM_IO_AUTH_KEY='xxxxx-xxx-xxxxxx-xxxx'
