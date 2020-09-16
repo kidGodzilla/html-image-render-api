@@ -12,7 +12,6 @@
     "url": "git+https://github.com/kidGodzilla/html-image-render-api.git"
   },
   "author": "James Futhey <futhey@gmail.com> (http://jamesfuthey.com/)",
-  "private": true,
   "bugs": {
     "url": "https://github.com/kidGodzilla/html-image-render-api/issues"
   },
