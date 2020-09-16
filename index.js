@@ -93,10 +93,11 @@ app.post('/img', (req, res) => {
         let thum = `https://image.thum.io/get/auth/${ THUM_IO_AUTH_KEY }/${ jpgStr }noanimate/${ fullStr }viewportWidth/${ (width * scale) }/width/${ (width * scale) }/${ heightStr }${ waitStr }?url=` + encodeURIComponent(jspenUrl);
 
         let scaleStr = scale !== 2 ? `&scale=${ scale }` : '';
+        let heightStr = height ? `&height=${ height }` : '';
 
         return res.json({
             key: key,
-            image: `${ SERVER_URL }/img/${ key }.${ type }?width=${ width }&height=${ height }${ scaleStr }`,
+            image: `${ SERVER_URL }/img/${ key }.${ type }?width=${ width }${ heightStr }${ scaleStr }`,
             thum: thum,
             preview: jspenUrl
         });
