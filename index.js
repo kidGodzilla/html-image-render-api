@@ -106,8 +106,15 @@ app.post('/img', (req, res) => {
     scale = parseInt(scale);
 
     if (scale > 1) css += `
-body{transform-origin:0 0;transform:scale(${ scale })}
+body{transform-origin:0 0;transform:scale(${ scale });
 `;
+    
+    let hStr = height ? `height:${ height };` : '';
+
+    css += `
+body{width:${ width };${ hStr }}
+    `;
+
     html += `
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.1/mustache.js"></script>
 <script>let _o = JSON.parse('{"' + (location.search.substring(1)).replace(/&/g, '","').replace(/=/g,'":"') + '"}', function(key, value) { return key===""?value:decodeURIComponent(value) });document.querySelector('.mustache').innerHTML = Mustache.render(document.querySelector('.mustache').innerHTML, _o);</script>
