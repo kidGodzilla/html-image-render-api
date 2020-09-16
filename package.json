@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/kidGodzilla/html-image-render-api/issues"
   },
-  "homepage": "https://github.com/kidGodzilla/html-image-render-api#readme"
+  "homepage": "https://github.com/kidGodzilla/html-image-render-api#readme",
+  "dependencies": {
+    "atob": "^2.1.2",
+    "btoa": "^1.2.1",
+    "express": "^4.17.1",
+    "mr365-utils": "^0.2.17",
+    "simple-logger-api-monitor": "^0.7.10",
+    "superagent": "^6.1.0",
+    "url": "^0.11.0"
+  }
 }
