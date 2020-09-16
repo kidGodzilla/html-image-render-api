@@ -105,15 +105,15 @@ app.post('/img', (req, res) => {
 
     scale = parseInt(scale);
 
+    let hStr = height ? `height:${ height }px` : '';
+
+    css += `
+body{width:${ width }px;${ hStr }}
+    `;
+
     if (scale > 1) css += `
 body{transform-origin:0 0;transform:scale(${ scale })}
 `;
-
-    let hStr = height ? `height:${ height }` : '';
-
-    css += `
-body{width:${ width };${ hStr }}
-    `;
 
     html += `
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.1/mustache.js"></script>
