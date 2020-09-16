@@ -2,7 +2,7 @@
 
 This is a small Node.js API endpoint to transform `html + css` into a dynamic image you can customize with query parameters.
 
-Pairs well with https://jspen.co/ -- a Codepen-like REPL for HTML / CSS / JS.
+Pairs well with [JSPen](https://jspen.co/) – a Codepen-like REPL for HTML / CSS / JS.
 
 ## How it Works
 
