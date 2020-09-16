@@ -106,10 +106,10 @@ app.post('/img', (req, res) => {
     scale = parseInt(scale);
 
     if (scale > 1) css += `
-body{transform-origin:0 0;transform:scale(${ scale });
+body{transform-origin:0 0;transform:scale(${ scale })}
 `;
-    
-    let hStr = height ? `height:${ height };` : '';
+
+    let hStr = height ? `height:${ height }` : '';
 
     css += `
 body{width:${ width };${ hStr }}
