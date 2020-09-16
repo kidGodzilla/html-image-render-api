@@ -66,7 +66,7 @@ localhost:5000/img/ca6407db1a15ea42f90d33eb9b5e1669.png?width=500&height=500&**t
 
 (You should use `encodeURIComponent()` for the params you add, though)
 
-This will generate an image with some custom text.
+This will generate an image with some custom text, like the one below:
 
 ![Example image](./example.png)
 
