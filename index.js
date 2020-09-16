@@ -9,11 +9,12 @@ const btoa = require('btoa');
 let app = express();
 
 const THUM_IO_AUTH_KEY = process.env.THUM_IO_AUTH_KEY || '';
-const JSPEN_PUT_ENDPOINT = `https://put.jspen.co/`;
-const JSPEN_RENDERER_BASE = 'http://jspen.co/s/';
-const SERVER_URL = process.env.SERVER_URL || '';
 const port = process.env.port || 5000;
 let debug = process.env.debug || 0;
+
+const JSPEN_PUT_ENDPOINT = process.env.JSPEN_PUT_ENDPOINT || `https://put.jspen.co/`;
+const JSPEN_RENDERER_BASE = process.env.JSPEN_RENDERER_BASE || 'http://jspen.co/s/';
+const SERVER_URL = process.env.SERVER_URL || 'http://localhost:'+port;
 
 corsAndBodyParser(app);
 
