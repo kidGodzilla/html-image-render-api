@@ -68,6 +68,8 @@ localhost:5000/img/ca6407db1a15ea42f90d33eb9b5e1669.png?width=500&height=500&**t
 
 This will generate an image with some custom text.
 
+![Example image](./example.png)
+
 
 
 ### Dotenv template
