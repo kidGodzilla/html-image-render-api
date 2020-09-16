@@ -1,0 +1,20 @@
+{
+  "name": "html-image-render-api",
+  "version": "0.2.7",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kidGodzilla/html-image-render-api.git"
+  },
+  "author": "James Futhey <futhey@gmail.com> (http://jamesfuthey.com/)",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/kidGodzilla/html-image-render-api/issues"
+  },
+  "homepage": "https://github.com/kidGodzilla/html-image-render-api#readme"
+}
