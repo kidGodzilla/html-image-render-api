@@ -103,8 +103,6 @@ app.post('/img', (req, res) => {
 
     scale = parseInt(scale);
 
-    let page = { html: html, css: css };
-
     if (scale > 1) css += `
 body{transform-origin:0 0;transform:scale(${ scale })}
 `;
@@ -115,6 +113,8 @@ body{transform-origin:0 0;transform:scale(${ scale })}
 <script src="text/javascript" href="https://cdn.jsdelivr.net/gh/jloutsenhizer/emojijs/emoji.js"></script>
 <script>window.timr = setInterval(function () { if (window.emoji) { window.emoji.emojifyWholePage(); clearInterval(window.timr) } }, 100);</script>
 `;
+
+    let page = { html: html, css: css };
 
     let d = { data : `/#${ b64EncodeUnicode(encodeURIComponent(makeHTML(page))) }` };
 
